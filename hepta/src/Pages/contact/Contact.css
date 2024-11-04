@@ -1,0 +1,141 @@
+.middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    height: 120vh;
+  }
+  
+  .my-form {
+    width: 55%;
+    background-color: white;
+    padding: 50px;
+    margin-top: -50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .information {
+    width: 42%;
+    margin-top: -50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .information h2 {
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px; /* Smaller heading */
+    color: rgb(101, 192, 186); /* Adjusted color */
+    margin-bottom: 15px;
+    line-height: 25px;
+  }
+  
+  .information p {
+    font-family: "Abril Fatface", times, serif;
+    font-weight: 200;
+    line-height: 54px;
+    font-size: 30px;
+    color: #000;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .half-width {
+    width: 48%;
+  }
+  
+  .form-group label {
+    font-family: "Mukta Mahee", arial, sans-serif;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 5px;
+    color: rgb(108, 117, 125);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+    border: 1px solid rgb(73, 80, 87);
+  }
+  
+  .form-group input {
+    height: 50px; /* Reduced height for input fields */
+  }
+  
+  .form-group textarea {
+    height: 200px; /* Reduced height for textarea */
+    resize: none;
+  }
+  
+  .btn-hos-form {
+    width: 25%;
+    padding: 12px; /* Adjust padding to make it look proportional */
+    font-size: 14px; /* Same font size as before */
+    font-weight: bold;
+    background-color: white; /* Default background color */
+    color: #5ab1a2; /* Text color */
+    border: 2px solid #5ab1a2; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .btn-hos-form:hover {
+    background-color: #5ab1a2; /* Background color on hover */
+    color: white; /* Text color changes to white on hover */
+    border: 2px solid #5ab1a2;
+  }
+  
+ @media (max-width:600px){
+     .middle{
+      width: 100vw;
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      gap: 80px;
+     }
+     .my-form{
+      width: 100%;
+      height: auto;
+      
+     }
+     .btn-hos-form{
+      width: 100px;
+      height: 60px;
+     }
+     .information{
+      width: 110%;
+      overflow: hidden;
+     }
+     .information p{
+      margin-left: -22px;
+     }
+ }
+ @media (min-width:601px) and (max-width:1000px){
+  .middle{
+    width: 100vw;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    gap: 80px;
+   }
+   .my-form{
+    width: 100%;
+    height: auto;
+   }
+   .information{
+    width: 100%;
+   }
+ }

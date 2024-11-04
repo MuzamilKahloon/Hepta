@@ -1,0 +1,122 @@
+.images-container{
+    width: 100%;
+    height: 220vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont-1{
+    width: 90%;
+    height: 35%;
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+}
+.cont-1 img{
+    width: 23%;
+    height: 70%;
+    border-radius: 5px;
+}
+.cont-2{
+    width: 90%;
+    height: 35%;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+.cont-2 img{
+    width: 23%;
+    height: 70%;
+    border-radius: 5px;
+}
+.cont-3{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    gap: 30px;
+    margin-left: 220px;
+    margin-bottom: 80px;
+}
+.cont-3 img{
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+}
+.cont-4{
+    width: 90%;
+    height: 35%;
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+.cont-4 img{
+    width: 23%;
+    height: 70%;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .images-container {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* Adds spacing between the image containers */
+    }
+
+    .cont-1, .cont-2, .cont-3, .cont-4 {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Adds spacing between individual images in each container */
+    }
+    .special{
+        margin-left: 0px;
+    }
+
+    .cont-1 img, 
+    .cont-2 img, 
+    .cont-3 img, 
+    .cont-4 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensures images scale properly while maintaining aspect ratio */
+        border-radius: 5px; /* Optional: Adds slight rounded corners to the images */
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .images-container {
+        width: 90vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px; /* Adds spacing between the image containers */
+    }
+
+    .cont-1, .cont-2, .cont-3, .cont-4 {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout for better spacing */
+        gap: 20px; /* Adds spacing between the images */
+    }
+
+    .special {
+        margin-left: 0px;
+    }
+
+    .cont-1 img, 
+    .cont-2 img, 
+    .cont-3 img, 
+    .cont-4 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensures images scale properly while maintaining aspect ratio */
+        border-radius: 5px; /* Optional: Adds slight rounded corners to the images */
+    }
+}

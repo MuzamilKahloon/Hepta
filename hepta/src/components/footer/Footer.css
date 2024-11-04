@@ -1,0 +1,201 @@
+
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+::selection {
+  color: #fff;
+  background: #65c0ba;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  font-weight: 500;
+  font-family: "Abril Fatface", times, serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.5); 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-section span{
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.5); 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ddd;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section input {
+  padding: 8px;
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  border-bottom: 1px solid white;
+}
+.footer-section .cnt{
+   font-style: italic;
+   color: white;
+}
+.footer-section p {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer { 
+  padding: 20px; 
+}
+
+.footer-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out sections */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-section {
+  flex: 1; /* Each section takes equal space */
+  min-width: 200px; /* Minimum width for sections */
+  margin: 10px; /* Margin between sections */
+}
+
+.input-container {
+  position: relative;
+  margin-top: 10px; /* Spacing from above text */
+}
+
+.icon {
+  position: absolute;
+  left: 150px; /* Position the icon */
+  top: 50%;
+  transform: translateY(-50%);
+  color: white; /* Color of the icon */
+}
+
+.input {
+  width: 100%; /* Full width */
+  padding: 10px 10px 10px 30px; /* Padding with space for icon */
+  border: none; /* Remove default border */
+  border-bottom: 2px solid white; /* White lower border */
+  background: transparent; /* Transparent background */
+  color: white; /* Input text color */
+  outline: none; /* Remove outline */
+}
+
+.input::placeholder {
+  color: white; /* Placeholder color */
+  opacity: 0.6; /* Slight transparency */
+}
+
+.footer-bottom {
+  text-align: center; /* Center text in the bottom section */
+  margin-top: 20px; /* Margin from above */
+}
+
+.social-icons {
+  display: flex; /* Flexbox for social icons */
+  justify-content: center; /* Center icons */
+  margin-top: 10px; /* Spacing */
+}
+
+.social-icons svg {
+  color: white; /* Icon color */
+  margin: 0 5px; /* Spacing between icons */
+}
+
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons svg {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #ddd;
+}
+
+@media (max-width:600px){
+  .footer{
+    width: 100vw;
+    height: auto;
+  }
+  .footer-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width:601px) and (max-width:900px){
+    .footer{
+      width: 100vw;
+      height: auto;
+    }
+    .footer-container{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+}

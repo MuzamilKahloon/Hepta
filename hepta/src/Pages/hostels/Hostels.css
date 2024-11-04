@@ -1,0 +1,504 @@
+/* Main section for the background image */
+.main-hotel {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image container to handle the 80% height */
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; /* Set height to 80% of the page */
+    overflow: hidden;
+}
+
+/* Background image */
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Dark overlay for better readability */
+.main-hotel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; /* Match the height of the container */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.main-hotel .navbar {
+    margin-top: 20px; /* Move 20px downward */
+}
+
+/* Navbar styling */
+/* Navbar styling for Hostels */
+.hostels-navbar {
+    margin-top: 20px; /* Adjust only the Hostels navbar */
+    position: absolute; /* Ensure it stays above the background */
+    width: 100%;
+    z-index: 3; /* Ensure the navbar is above everything */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Other existing styles can remain unchanged */
+
+
+/* Adjust the logo */
+.navbar .logo {
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, serif;
+}
+
+/* Hamburger menu for mobile */
+.navbar .hamburger {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Text overlay */
+.text-overlay-hostel {
+    position: absolute;
+    top: 40%; /* Vertically adjust based on the 80% height */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ensure centering */
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 80%; /* Make it responsive on smaller screens */
+}
+
+/* Overlay heading */
+.text-overlay-hostel h1 {
+    font-size: 4rem; /* Large title */
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+/* Overlay subheading */
+.text-overlay-hostel p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.text-overlay-hostel a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+
+
+
+/* Experience secction */
+
+
+.icon-section-hos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.icon-item-hos {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.icon-item-hos img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.icon-item-hos h1 {
+    font-family:"Abril Fatface", times, serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icon-item-hos p {
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 32px;
+    color: rgb(108, 117, 125);
+    margin-bottom: 0;
+}
+
+/* Family Room */
+
+.section {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%; /* Set to 100% */
+    max-width: 100%; /* Prevents overflow */
+    /* Adjusted if needed */
+    background-color: #fff;
+    padding: 80px;
+    flex-wrap: wrap; /* Allow wrapping for responsive layout */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Image container */
+.pt1 {
+    width: 45vw;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pt1 img {
+    width: 100%; /* Adjust the width correctly */
+    height: 95vh;
+  }
+
+/* Text section */
+.text-area {
+    width: 45%;
+  }
+
+.text-area h3 {
+    font-family: "Abril Fatface", times, serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 38px;
+    color: #000;
+}
+
+.text-area p {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: rgb(108, 117, 125);
+    font-weight: 200;
+    font-family: "Mukta Mahee", arial, sans-serif;
+}
+
+.text-area .btn-hos {
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 700;
+    border: 1px solid #009688;
+    font-size: 18px;
+    line-height: 32px;
+    background-color: transparent;
+    color: rgb(63, 154, 148);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.text-area .btn-hos:hover {
+    background-color: #009688;
+    color: #fff;
+    border: 1px solid gray;
+}
+
+.play-icon {
+    font-size: 1.2rem;
+}
+
+/* section 2 */
+
+
+.section-2 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -120px;
+    width: 100%; /* Set to 100% */
+    max-width: 100%; /* Prevents overflow */
+    padding: 80px;
+    flex-wrap: wrap; /* Allow wrapping for responsive layout */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Image container */
+.pt1-2 {
+    width: 45vw;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pt1-2 img {
+    width: 100%; /* Adjust the width correctly */
+    height: 120vh;
+  }
+
+/* Text section */
+.text-area-2 {
+    width: 45%;
+  }
+
+.text-area-2 h3 {
+    font-family: "Abril Fatface", times, serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 38px;
+    color: #000;
+}
+
+.text-area-2 p {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: rgb(108, 117, 125);
+    font-weight: 200;
+    font-family: "Mukta Mahee", arial, sans-serif;
+}
+
+.text-area-2 .btn-hos-2 {
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 700;
+    border: 1px solid #009688;
+    font-size: 18px;
+    line-height: 32px;
+    background-color: transparent;
+    color: rgb(63, 154, 148);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.text-area-2 .btn-hos-2:hover {
+    background-color: #009688;
+    color: #fff;
+    border: 1px solid gray;
+}
+
+
+/* Slider plus content section */
+
+.tour {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 800px;
+    height: 50vh;
+}
+
+.tour h1 {
+    font-size: 70px;
+    font-family: "Abril Fatface", times, serif;
+    line-height: 70px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.tour p {
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 300;
+
+    font-size: 20px;
+    color: rgb(108, 117, 125);
+    line-height:36px;
+    margin-top: 20px;
+}
+
+
+/* Hotel Features */
+
+/* This section is for Blogs */
+.blog-hos{
+    width: 100%;
+    height: 220vh;
+   
+    margin-top: -300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content-section-hos{
+    text-align: center;
+    width: 80%;
+    height: 30vh; 
+    margin-top: 300px;  
+}
+.content-section-hos h1{
+      font-family: "Abril Fatface", times, serif;
+      font-weight: 500;
+      color: #000;
+      font-size: 70px;
+      line-height: 70px;
+}
+.content-section-hos p{
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 300;
+    color: rgb(108, 117, 125);
+    font-size: 20px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+.cards-section-hos {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 65vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.blog1-hos, .blog2-hos, .blog3-hos {
+    background-color: white;
+    overflow: hidden;
+    width: 29%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    
+}
+.blog1-hos img, .blog2-hos img, .blog3-hos img {
+    width: 100%;
+    object-fit: cover;
+}
+.blog1-hos h1, .blog2-hos h1, .blog3-hos h1 {
+    font-family: "Abril Fatface", times, serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    line-height: 31px;
+    margin: 15px 0;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+@media (max-width:600px){
+    .icon-section-hos{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .section-2{
+        width: 100vw;
+        height: auto;
+    }
+    .section{
+        gap: 50px;
+    }
+    .btn-hos{
+        margin-top: 20px;
+    }
+    .text-area-2{
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .pt1-2{
+        width: 100%;
+        height: auto;
+    }
+    .pt1-2 img{
+        width: 100vw;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .blog-hos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .cards-section-hos{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .blog1-hos, .blog2-hos, .blog3-hos{
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+    .section-2 {
+        display: flex;
+        flex-direction: row;
+        width: 90vw; /* Reduced width to add padding on the sides */
+        height: auto;
+        align-items: center;
+        justify-content: space-between; /* Space between text and image */
+        gap: 20px; /* Adds spacing between the text and image */
+        margin: 0 auto; /* Centers the section */
+    }
+
+    .text-area-2 {
+        width: 50%; /* 50% width for the text area */
+        padding-right: 20px; /* Adds some space between the text and the image */
+    }
+
+    .text-area-2 h3 {
+        font-size: 2rem; /* Increase the heading size */
+        font-weight: bold; /* Make it bold like in the design */
+        margin-bottom: 15px;
+    }
+
+    .text-area-2 p {
+        font-size: 1rem; /* Adjust the paragraph text size */
+        line-height: 1.6; /* Adds proper spacing between lines */
+        margin-bottom: 15px;
+    }
+
+    .btn-hos-2 {
+        padding: 10px 20px;
+        border: 2px solid #000; /* Black border for the button */
+        background-color: transparent;
+        color: #000;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-hos-2:hover {
+        background-color: #000; /* Hover effect to fill background */
+        color: #fff;
+    }
+
+    .pt1-2 {
+        width: 45%; /* 45% width for the image area */
+    }
+
+    .pt1-2 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensures the image maintains its aspect ratio */
+        border-radius: 10px; /* Adds rounded corners */
+    }
+}

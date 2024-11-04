@@ -1,0 +1,426 @@
+.cards-blog {
+    width: 100%;
+    height: 200vh;
+
+    display: flex;
+}
+
+.card-sec-blog {
+    width: 65%;
+    height: 100%;
+    
+}
+
+.card-sec-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    width: 100%;
+    height: 30%;
+}
+
+/* Fixed the overlapping issue */
+.blog1-news, 
+.blog2-news {
+    background-color: white;
+    overflow: hidden;
+    width: 45%; /* Adjusted width to prevent overlap */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    height: 120%;
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.blog1-news img, 
+.blog2-news img {
+    width: 100%;
+    height: auto; /* Keeps aspect ratio */
+    object-fit: cover;
+}
+
+.blog1-news h1, 
+.blog2-news h1 {
+    font-family: "Abril Fatface", times, serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    line-height: 31px;
+    margin: 15px 0;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 50px;   
+    margin-right: 50px;
+}
+.card-sec-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 30%;
+    margin-top: 150px;
+}
+.card-sec-form{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card-form{
+    width: 65%;
+    height: 8%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #666;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.popular-posts-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Adjust width as per design */
+}
+.popular-posts-container p{
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.post-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.post-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+.categories-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width as per your layout */
+}
+
+.section-title {
+    font-family: "Mukta Mahee", arial, sans-serif;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.category-count{
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 200;
+    color: rgb(108, 117, 125);
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.categories-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+}
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+.category-name {
+    color: rgb(63, 154, 148); /* Adjust to your color */
+    cursor: pointer;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 32px;
+
+}
+
+.category-name:hover {
+    text-decoration: underline;
+}
+
+.category-count {
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    .cards-blog {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+
+    .card-sec-blog,
+    .card-sec-1,
+    .card-sec-2 {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      align-items: center;
+    }
+  
+    .blog1-news,
+    .blog2-news,
+
+    .popular-posts-container{
+        width: 80% !important;
+        margin-left: 30px;
+    }
+    .categories-container {
+      width: 100%; /* Full width for smaller screens */
+      margin-bottom: 20px; /* Add spacing between elements */
+    }
+  
+    .card-form{
+        width: 85%;
+        height: 80px;
+        margin-top: 15px;
+        margin-top: 80px;
+    }
+    .search-container{
+        width: 80%;
+        margin-top: 10px;
+    }
+    .card-sec-form {
+      width: 95%;
+    }
+  
+    .search-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .popular-posts-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%; /* Ensure full width */
+      margin-bottom: 20px;
+    }
+  
+    .posts-list {
+      display: flex;
+      flex-direction: column; /* Stack the posts in one column */
+      width: 100%;
+    }
+  
+    .post-item {
+      display: flex;
+      flex-direction: column; /* Stack image and details vertically */
+      align-items: center; /* Center the content */
+      width: 90%; /* Ensure each post takes up full width */
+      margin-bottom: 15px; /* Add space between posts */
+    }
+  
+    .post-image {
+      width: 100%; /* Make the image take full width */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Space between image and text */
+    }
+  
+    .post-details {
+      width: 100%;
+      text-align: center; /* Center align the text */
+    }
+  
+    .post-date {
+      font-size: 14px;
+      color: #888;
+      display: block;
+    }
+  
+    .post-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1000px) {
+    .cards-blog {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-sec-blog,
+    .card-sec-1,
+    .card-sec-2 {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+      margin-bottom: 20px; /* Add space between sections */
+    }
+  
+    .blog1-news,
+    .blog2-news {
+      width: 85%; /* Slightly wider compared to 600px */
+      margin-bottom: 20px; /* Space between blogs */
+    }
+  
+    .popular-posts-container {
+      width: 85%;
+      margin-left: 20px;
+    }
+  
+    .categories-container {
+      width: 95%; /* Wider for larger screens */
+      margin-bottom: 20px;
+    }
+  
+    .card-form {
+      width: 90%;
+      height: 70px;
+      margin-top: 20px;
+    }
+  
+    .search-container {
+      width: 90%;
+      
+    }
+  
+    .card-sec-form {
+      width: 90%;
+    }
+  
+    .posts-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .post-item {
+      display: flex;
+      flex-direction: row; /* Make the layout horizontal instead of stacked */
+      align-items: flex-start;
+      width: 90%;
+      margin-bottom: 15px;
+      justify-content: space-between;
+    }
+  
+    .post-image {
+      width: 40%; /* Reduce width of image to make space for text */
+      height: auto;
+      margin-right: 15px; /* Add space between image and text */
+    }
+  
+    .post-details {
+      width: 55%; /* Make the post details take up the remaining space */
+      text-align: left; /* Align text to the left */
+    }
+  
+    .post-date {
+      font-size: 16px;
+      color: #888;
+      margin-bottom: 5px;
+    }
+  
+    .post-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  
+    .category-item {
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  

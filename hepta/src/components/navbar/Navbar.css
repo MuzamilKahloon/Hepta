@@ -1,0 +1,102 @@
+/* Navbar.css */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.navbar {
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between logo and toggle button */
+    padding:10px 20px;
+    background: none;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Ensures no overflow due to padding */
+}
+
+/* Logo */
+.logo h1 {
+    color: white; /* White text for visibility */
+    font-family: 'Georgia', serif;
+    font-size: 30px; /* Font size for logo */
+    position: relative;
+    z-index: 10;
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+    transform: translateX(100%); /* Slide off-screen by default */
+}
+
+.menu.open {
+    transform: translateX(0); /* Slide menu into view */
+}
+
+/* Menu items */
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+}
+
+.menu ul li {
+    margin: 20px 0; /* Spacing between items */
+}
+
+.menu ul li a {
+    color: black;
+    font-size: 36px; /* Font size for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #009688; /* Hover color */
+}
+
+/* Hamburger and close buttons */
+.toggle-button {
+    z-index: 20;
+    cursor: pointer;
+    color: white; /* Ensure the toggle button is visible */
+}
+
+.menu-icon {
+    color: white; /* White color for visibility */
+    font-size: 36px; /* Size of the hamburger icon */
+    margin-right: 20px; /* Space to the right */
+}
+
+.close {
+    color: black; /* Close icon color */
+    font-size: 36px; /* Size of the close icon */
+}
+
+
+@media (max-width:600px){
+    .navbar{
+        width: 100vw;
+    }
+}
+@media (min-width:601px) and (max-width:1200px){
+    .navbar{
+        width: 100vw;
+    }
+}
+   
